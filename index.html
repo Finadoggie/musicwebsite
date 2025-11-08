@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midifier</title>
+    <style>
+        body {
+            width: 100dvw;
+            height: 100dvh;
+            background-image: url(thumb-1920-1203812.png);
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #ffffff7f;
+            border-radius: 15px;
+            padding: 32px;
+            backdrop-filter: blur(5px) brightness(90%);
+            filter: drop-shadow(8px 7px 4px #0000007f);
+        }
+        h1 {
+            color:#ffffffcf;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="https://api.finadoggie.dev/midifier/" method="post" enctype="multipart/form-data">
+            <h1>Midifier</h1>
+            <br>
+            <input type="file" name="filetoupload">
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
